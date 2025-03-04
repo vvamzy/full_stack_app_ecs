@@ -128,3 +128,40 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+terraform.tfstate.d/
+
+# Terraform plan files
+*.tfplan
+
+# Crash logs
+crash.log
+
+# Ignore override files as they can contain sensitive information
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore variables files if they contain sensitive data
+terraform.tfvars
+terraform.tfvars.json
+
+# Ignore provider lock files
+.terraform.lock.hcl
+
+# Ignore Terraform directories
+.terraform/
+
+# Ignore local environment files
+.env
+.envrc
+
+# Ignore any other generated files
+*.backup
+*.bak
+.DS_Store
