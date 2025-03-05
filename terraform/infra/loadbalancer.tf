@@ -42,6 +42,7 @@ resource "aws_lb_listener" "demo_listener" {
     Name = "demo-app-listener"
   }
 
+
   # Ensure the listener is deleted before the target group
   depends_on = [aws_lb_target_group.demo_tg]
 }
