@@ -10,7 +10,7 @@
 
   <script>
     async function fetchData() {
-      const response = await fetch('http://localhost:5000/api/user'); <!-- Update this line -->
+      const response = await fetch('http://demo-app-alb-1527514554.ap-south-1.elb.amazonaws.com/api/user');
       const data = await response.json();
       document.getElementById('details').innerText = `Name: ${data.name}, Mobile: ${data.mobile}`;
     }

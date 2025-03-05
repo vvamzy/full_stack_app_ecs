@@ -23,8 +23,8 @@ resource "aws_ecs_task_definition" "demo_task" {
       essential = true
       portMappings = [
         {
-          containerPort = 80
-          hostPort      = 80 # Backend uses host port 80
+          containerPort = 5000
+          hostPort      = 5000
         }
       ]
       environment = [
@@ -62,8 +62,8 @@ resource "aws_ecs_task_definition" "demo_task" {
       essential = true
       portMappings = [
         {
-          containerPort = 8080
-          hostPort      = 8080 # Frontend uses host port 8080
+          containerPort = 80
+          hostPort      = 80 # Frontend uses host port 8080
         }
       ]
       logConfiguration = {
